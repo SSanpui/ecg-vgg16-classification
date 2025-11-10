@@ -1,2 +1,2 @@
 # ecg-vgg16-classification
-This repository contains reproducible code for diagnising Arrhythmia by integrating ECG Spectrograms with Deep Learning methods.
+This repository contains reproducible code for diagnising Arrhythmia by integrating ECG Spectrograms with Deep Learning methods. The VGG16-based transfer learning framework demonstrates robust performance for multi-class ECG arrhythmia classification. While current validation is limited to the MIT-BIH dataset, results establish technical feasibility for clinical decision support applications, pending prospective validation on 
