@@ -1,0 +1,85 @@
+{
+  "experiment_info": {
+    "timestamp": "2025-12-01T16:07:54.418458",
+    "dataset": "MIT-BIH Arrhythmia Database",
+    "dataset_url": "https://physionet.org/content/mitdb/1.0.0/",
+    "classes": [
+      "N",
+      "LBBB",
+      "RBBB",
+      "PAC",
+      "PVC",
+      "VF"
+    ],
+    "signal_processing": "Continuous Wavelet Transform (CWT)",
+    "wavelet_type": "morl",
+    "architecture": "VGG16 Transfer Learning"
+  },
+  "dataset_statistics": {
+    "original_counts": {
+      "N": 15000,
+      "LBBB": 8071,
+      "RBBB": 7256,
+      "PAC": 2603,
+      "PVC": 6957,
+      "VF": 484
+    },
+    "train_samples": 24219,
+    "val_samples": 8075,
+    "test_samples": 8077,
+    "total_samples": 40371
+  },
+  "training_details": {
+    "epochs_trained": 50,
+    "max_epochs": 50,
+    "training_time_hours": 4.31,
+    "early_stopping_triggered": false,
+    "batch_size": 32,
+    "initial_lr": 0.0001
+  },
+  "test_performance": {
+    "accuracy": "96.05%",
+    "precision": "96.73%",
+    "recall": "95.53%",
+    "f1_score": "96.13%",
+    "loss": "0.1278"
+  },
+  "per_class_performance": {
+    "N": {
+      "precision": "97.52%",
+      "recall": "97.34%",
+      "f1-score": "0.974",
+      "support": 1615
+    },
+    "LBBB": {
+      "precision": "98.68%",
+      "recall": "96.87%",
+      "f1-score": "0.978",
+      "support": 3000
+    },
+    "RBBB": {
+      "precision": "89.02%",
+      "recall": "84.07%",
+      "f1-score": "0.865",
+      "support": 521
+    },
+    "PAC": {
+      "precision": "91.36%",
+      "recall": "96.48%",
+      "f1-score": "0.939",
+      "support": 1392
+    },
+    "PVC": {
+      "precision": "96.98%",
+      "recall": "97.31%",
+      "f1-score": "0.971",
+      "support": 1452
+    },
+    "VF": {
+      "precision": "85.15%",
+      "recall": "88.66%",
+      "f1-score": "0.869",
+      "support": 97
+    }
+  }
+}
